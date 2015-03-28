@@ -18,13 +18,25 @@
         Search: <input ng-model="query">
 
       </div>
-      <div class="col-md-10">
+      <div class="col-md-6">
         <!--Body content-->
-        <ul class="holes">
-          <li ng-repeat="h in holes | filter:query">
-            <span>{{h.hole}} par: {{h.par}} length: {{h.length}}</span>
-          </li>
-        </ul>
+        <h2>Vesper Front Nine</h2>
+	<table class="table">
+	  <thead>
+	    <tr>
+	      <th>Hole number</th>
+	      <th>Par</th>
+	      <th>Length</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    
+          <tr ng-repeat="h in holes | filter:query">
+            <td>{{h.hole}}</td>
+	    <td>{{h.par}}</td>
+	    <td>{{h.length}}</td>
+	  <tr>
+        </tbody>
 
       </div>
     </div>
