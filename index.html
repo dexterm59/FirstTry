@@ -20,11 +20,9 @@
       </div>
       <div class="col-md-10">
         <!--Body content-->
-
         <ul class="holes">
           <li ng-repeat="h in holes | filter:query">
-            <span>{{h.hole}}</span>
-            <p>par: {{h.par}} dist: {{h.length}}</p>
+            <span>{{h.hole}} par: {{h.par}} length: {{h.length}}</span>
           </li>
         </ul>
 
