@@ -18,15 +18,16 @@
         Search: <input ng-model="query">
 
       </div>
-      <div class="col-md-6">
+      <div class="col-md-2">
         <!--Body content-->
         <h2>Vesper Front Nine</h2>
-	<table class="table">
+	<table class="table table-striped table-bordered table-hover">
 	  <thead>
 	    <tr>
 	      <th>Hole number</th>
 	      <th>Par</th>
 	      <th>Length</th>
+	      <th>Score</th>
 	    </tr>
 	  </thead>
 	  <tbody>
@@ -35,10 +36,9 @@
             <td>{{h.hole}}</td>
 	    <td>{{h.par}}</td>
 	    <td>{{h.length}}</td>
-	  <tr>
+	    <td><input ng-model="h.score"></td>
+	  </tr>
         </tbody>
-
-      </div>
     </div>
   </div>
 
